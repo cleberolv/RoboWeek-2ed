@@ -6,7 +6,7 @@ Dado que desejo comer "${dish}"
     Set Test Variable   ${dish}
 
 Quando entro com o email "${email}"
-    Wait Until Page Contains        Buscar Prato    8
+    Wait Until Page Contains        Buscar Prato    15
     Input Text      accessibility_id=emailInput     ${email}
     Input Text      accessibility_id=plateInput     ${dish}
     Click Text      Buscar Prato
