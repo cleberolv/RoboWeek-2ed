@@ -42,7 +42,7 @@ Quando realizo o cadastro desse prato sem foto
     Input Text          ${FIELD_PRICE}       ${product['preco']}
     Click Element       ${BTN_REGISTER}
 
-Então devo vizualizar o novo prato no dashboard
+Então devo visualizar o novo prato no dashboard
     Wait Until Element Contains     ${DIV_LIST}     ${product['nome']} 
 
 Então devo ver a seguinte mensagem "${error_message}"
@@ -57,5 +57,5 @@ Quando realizo a exclusão desse prato
     Wait Until Element Is Visible   ${BTN_REMOVE}   5
     Click Element                   ${BTN_REMOVE}
 
-Então devo vizualizar o prato excluido no dashboard
+Então devo visualizar o prato excluido no dashboard
     Wait Until Element Does Not Contain     ${DIV_LIST}     ${product['nome']}

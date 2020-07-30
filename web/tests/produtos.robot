@@ -18,7 +18,7 @@ Test Teardown   Close Session
 Novo prato
     Dado que "${lasanha}" é um novo prato a ser cadastrado
     Quando realizo o cadastro desse prato
-    Então devo vizualizar o novo prato no dashboard
+    Então devo visualizar o novo prato no dashboard
 
 Cadastro com preço inválido
     Dado que "${strogonoff}" é um novo prato a ser cadastrado
@@ -33,4 +33,4 @@ Cadastro sem foto
 Exclusão de prato
     Dado que "${lasanha}" é um prato a ser excluido
     Quando realizo a exclusão desse prato
-    Então devo vizualizar o prato excluido no dashboard
+    Então devo visualizar o prato excluido no dashboard
