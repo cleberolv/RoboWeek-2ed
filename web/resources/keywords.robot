@@ -33,5 +33,17 @@ Quando realizo o cadastro desse prato
     Input Text          ${FIELD_PRICE}       ${product['preco']}
     Click Element       ${BTN_REGISTER}
 
+Quando realizo o cadastro desse prato sem foto
+    Wait Until Element Is Visible   ${BTN_ADD}   5
+    Click Element                   ${BTN_ADD}
+
+    Input Text          ${FIELD_NAME}        ${product['nome']} 
+    Input Text          ${FIELD_TYPE}        ${product['tipo']} 
+    Input Text          ${FIELD_PRICE}       ${product['preco']}
+    Click Element       ${BTN_REGISTER}
+
 Então devo vizualizar o novo prato no dashboard
     Wait Until Element Contains     ${DIV_LIST}     ${product['nome']} 
+
+Então devo ver a seguinte mensagem "${error_message}"
+    Wait Until Element Contains     ${DIV_ALERT}     ${error_message}
