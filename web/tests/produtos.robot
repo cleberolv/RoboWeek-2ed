@@ -29,3 +29,8 @@ Cadastro sem foto
     Dado que "${batatinha}" é um novo prato a ser cadastrado
     Quando realizo o cadastro desse prato sem foto
     Então devo ver a seguinte mensagem "Seu prato precisa de uma foto muito bonita!"
+
+Exclusão de prato
+    Dado que "${lasanha}" é um novo prato a ser excluido
+    Quando realizo a exclusão desse prato
+    Então devo vizualizar o prato excluido no dashboard

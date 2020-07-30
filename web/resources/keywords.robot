@@ -47,3 +47,12 @@ Então devo vizualizar o novo prato no dashboard
 
 Então devo ver a seguinte mensagem "${error_message}"
     Wait Until Element Contains     ${DIV_ALERT}     ${error_message}
+
+# Keywors: Exclusão de pratos
+
+Quando realizo a exclusao desse prato
+    Wait Until Element Is Visible   ${BTN_REMOVE}   5
+    Click Element                   ${BTN_REMOVE}
+
+Então devo vizualizar o prato excluido no dashboard
+    Wait Until Element Does Not Contain     ${DIV_LIST}     ${product['nome']}

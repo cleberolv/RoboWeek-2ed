@@ -11,6 +11,7 @@ ${DIV_ALERT}           class:alert
 # Dashboard
 ${DIV_DASH}           class:dashboard
 ${BTN_ADD}            class:btn-add
+${BTN_REMOVE}         class:delete-icon
 ${FIELD_PHOTO}        css:input[id=thumbnail]
 ${FIELD_NAME}         id:name
 ${FIELD_TYPE}         id:plate
