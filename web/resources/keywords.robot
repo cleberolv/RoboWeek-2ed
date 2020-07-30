@@ -50,7 +50,10 @@ Então devo ver a seguinte mensagem "${error_message}"
 
 # Keywors: Exclusão de pratos
 
-Quando realizo a exclusao desse prato
+Dado que "${product}" é um prato a ser excluido
+    Set Test Variable     ${product}
+
+Quando realizo a exclusão desse prato
     Wait Until Element Is Visible   ${BTN_REMOVE}   5
     Click Element                   ${BTN_REMOVE}
 
