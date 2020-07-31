@@ -3,6 +3,7 @@ Documentation       Estrutura base do projeto e importações
 
 Library     OperatingSystem
 Library     SeleniumLibrary
+Library     RequestsLibrary
 
 Resource    elements.robot
 Resource    keywords.robot

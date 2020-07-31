@@ -13,7 +13,7 @@ Open Session
     ...     platformName=Android
     ...     deviceName=Emulator
     ...     app=${CURDIR}/app/ninjachef.apk
-    ...     udid=emulator-5554
+    ...     udid=emulator-5556
     ...     noSign=false
     ...     adbExecTimeout=120000
 
